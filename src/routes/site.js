@@ -4,7 +4,7 @@ const router = express.Router();
 
 const SiteContronller = require('../app/contronllers/SiteContronllers');
 
-router.use('/search' , SiteContronller.search);
-router.use('/' , SiteContronller.index);
+router.get('/search' , SiteContronller.search);
+router.get('/' , SiteContronller.index);
 
 module.exports = router;

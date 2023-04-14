@@ -1,0 +1,16 @@
+<div class="mt-4">
+    <h3>Sửa Nhạc</h3>
+    <form method="POST" action="/song/{{songs._id}}?_method=PUT">
+
+        <div class="form-group">
+            <label for="name">Name Song</label>
+            <input type="text" class="form-control" id="name"  name="name" value="{{songs.name}}">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Author</label>
+            <input type="text" class="form-control" id="author"  name="author" value="{{songs.author}}">
+
+        <button  type="submit" style="margin-top: 15px">Lưu Lại</button>
+</form>
+</div>
